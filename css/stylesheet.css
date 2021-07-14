@@ -11,8 +11,7 @@
 }
 body{
 	font-family: 'Raleway' , sans-serif;
-	background-color: #b8c6db;
-    background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%);
+    background-color: #120e16;
 }
 
 #my-section , #about , #about-me , #education , #contact{
@@ -22,11 +21,7 @@ body{
     align-items: center;
     flex-direction: column;
 }
-#my-section{
-    background-color: #0cbaba;
-    background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
-    /*clip-path: polygon(0 0, 100% 0%, 100% 85%, 50% 100%, 0 85%);
-*/}
+
 #about{
     height: auto;
     justify-content: center;
@@ -37,7 +32,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: : white;
+    color : white;
     font-weight: bolder;
 }
 .social-media{
@@ -74,7 +69,7 @@ nav{
     color: white;
 }
 .menu-icon{
-    float: right;
+    /*float: right;*/
     position:relative;
     display: inline-block;
 
