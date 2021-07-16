@@ -1,17 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap');
 
+@font-face {
+    font-family: 'FiraCode-Bold';
+    src:  url('../fonts/FiraCode-Bold.ttf');      
+  }
+@font-face {
+    font-family: 'FiraCode-Light';
+    src:  url('../fonts/FiraCode-Light.ttf');      
+  }  
+@font-face {
+    font-family: 'FiraCode-Medium';
+    src:  url('../fonts/FiraCode-Medium.ttf');      
+  }
+@font-face {
+    font-family: 'FiraCode-Regular';
+    src:  url('../fonts/FiraCode-Regular.ttf');      
+  }
+@font-face {
+    font-family: 'FiraCode-SemiBold';
+    src:  url('../fonts/FiraCode-SemiBold.ttf');      
+  }
 *{
     box-sizing: border-box;
     transition: ease all 1s;
-    user-select: none;
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
+    user-select: none;
 }
 body{
-	font-family: 'Raleway' , sans-serif;
-    background-color: #120e16;
+	font-family: 'FiraCode-Regular' , sans-serif;
+	background-color: #1a171e;
+}
+.bg-img{
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
 
 #my-section , #about , #about-me , #education , #contact{
@@ -21,19 +46,41 @@ body{
     align-items: center;
     flex-direction: column;
 }
-
+#my-section{
+    background-color: #120e16;
+}
 #about{
     height: auto;
     justify-content: center;
 }
 nav{
-    width: 90%;
+    width: 100%;
+    z-index: 1;
+}
+.navbar-container{
+    z-index: 2;
+    height:100%;
+    padding-left: 2rem ;
     height: 10vh;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    color : white;
+    justify-content: space-between;
+    color: white;
     font-weight: bolder;
+}
+.logo-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.logo{
+    background-color: #9f55ff ;
+    height:30px;
+    width:30px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .social-media{
     display: flex;
@@ -41,25 +88,22 @@ nav{
     align-items: center;
     width: 100%;
 }
-.icons {
+.icon {
     display: flex;
+    margin-right: 2rem;
+    font-size: xx-large;
+
 }
-.icon-d  {
-    margin: 15px;
-    font-size: 20px;
-    color: white;
-    cursor: pointer;
-}
-.icon-d:hover{
-    color: #0CBABA;
-}
+
 .dropbtn{
     display: flex;
     width: 2rem;
     background:none;
-    align-items: center;
+    align-items: flex-start;
     border: none;
     font-size: 20px;
+    color: white;
+    background-color: #0d324d;
 }
 .dropbtn:hover{
     background:none;
@@ -68,12 +112,7 @@ nav{
 .dropbtn:hover{
     color: white;
 }
-.menu-icon{
-    /*float: right;*/
-    position:relative;
-    display: inline-block;
 
-}
 .dropdown-content{
   display: none;
   position: absolute;
@@ -82,71 +121,68 @@ nav{
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
-.dropdown-content a {
-  color: black;
+a {
+  color: white;;
   padding: 10px 10px;
   text-decoration: none;
-  display: block;
   text-align: right;
 }
 .dropdown-content a:hover{
-    background-color: #380036;
+    background-color: #9f55ff;
     color: white;
 }
 .menu-icon:hover .dropdown-content {display: block;}
 .intro{
     height: 50vh;
+    width:100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
-    color: #123175;
-    margin: 2rem 1rem;
-    margin-bottom: 0;
+    padding : 2rem;
 }
-.intro h1{
-    font-size: 37px;
-    color: white;
-    animation: zoomIn;
-    animation-duration: 2s;
+.small-text{
+    color : #9f55ff;
+}
+.large-text{
+    color : #ffffff;
+    font-size: 3rem;
 }
 
 .btns{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width:100%;
 }
 button{
     width: 10rem;
     height: 2rem;
     margin-left: 2rem;
     outline: none;
-    border: 2px solid #e9ddd4;
+    border:none;
     letter-spacing: 2px;
     font-size: .8rem;
     cursor: pointer;
 }
 button:hover {
-    background-color: #123175;
-    border-color: #123175;
+    background-color: #000;
+    border-color: #9f55ff;
     color: white;
     transition: .3s;
 
 }
 .hire-me{
-    background: #e9ddd4;
-    animation: morph-a 10s infinite;
+    background:none;
+    border : solid 2px #9f55ff;
+    color : #9f55ff;  
 }
-@keyframes morph-a {
-  0%   { color: #B8C7F4; }
-  16%  { color: #90A8EE; }
-  33%  { color: #6988E7; }
-  50%  { color: #4169E1; }
-  66%  { color: #6988E7; }
-  83%  { color: #90A8EE; }
-  100% { color: #B8C7F4; }
+.hire-me:hover{
+    background:#9f55ff;
+    color : #000;
+    
 }
-
 .resume{
     border-color: #63747a;
     background: #63747a;
@@ -158,25 +194,7 @@ button:hover {
     align-items: flex-end;
     height: 10rem;
 }
-.shape{
-    height: 20px;
-    width: 20px;
-    border: 2px solid #fff;
-    transform: rotate(45deg);
-    margin-bottom: 1rem;
-    border-top: 0;
-    border-left: 0;
-    animation: shine 4s ease infinite;
-}
-@keyframes shine{
-    0%  {opacity: .2;}
-    12% {opacity: .5;}
-    25% {opacity: .7;}
-    50% {opacity:  1;}
-    75% {opacity: .7;}
-    87% {opacity: .5;}
-    100%{opacity: .2;}
-}
+
 
 .featured{
     display: flex;
@@ -196,24 +214,24 @@ button:hover {
 .featured-icon{
     width: 7rem;
     height: 6rem;
-    background: #380036;
+    background: #120e16;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #0CBABA;
+    color: #9f55ff;
     font-size: 3rem;
     margin-bottom: 1rem;
     margin-top: 2rem;
 }
-.col h1{
+.col h3{
     letter-spacing: 2px;
+    color: #f8f8f8;
 }
 .col span{
     font-size: .8rem;
     text-align: center;
     padding: 1rem;
 }
-
 .info-skills{
     display: flex;
     padding: 5rem 0;
@@ -241,8 +259,7 @@ button:hover {
     font-size: 30px;
     letter-spacing: 2px;
     font-weight: bolder;
-    color: #0CBABA;
-    
+    color: #9f55ff;
 }
 .about-info{
     width: 90%;
@@ -251,13 +268,19 @@ button:hover {
     align-items: center;
     flex-direction: column;
 }
+.photo-container{
+    width:30%;
+    height:30%;
+    margin-bottom: 2vh;
+    border : solid 2px #9f55ff;
+}
 .about-info p{
     font-size: 3vh;
     text-align: justify;
     text-justify: inter-word;
-    color: #380036;
+    color: #ffffff;
     margin-bottom: 5vh;
-    width : 80%;
+    width : 90%;
     
 }
 .skills{
@@ -278,17 +301,17 @@ button:hover {
 }
 .skill-title{
     width: 20%;
-    background: #0CBABA;
+    background: #ffffff;
     font-weight: bold;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #380036;
+    color: #000000;
     font-size: .8rem;
 
 }
 .pr-bar{
-    background: #380036;
+    background: #8a8a8a;
 }
 .html{
     width: 70%;
@@ -318,7 +341,7 @@ button:hover {
     font-size: 7vh;
     letter-spacing: 2px;
     font-weight: bolder;
-    color: #0b1f65;
+    color: #9f55ff;
     margin-bottom: 5vh;
     
 }
@@ -337,16 +360,17 @@ button:hover {
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        background-color: #e1d9d1;
+        background-color: #ffffff;
     }
 
 .edc-col h2{
+    font-size: 1.35rem;
     text-align: center;
     margin-bottom: 2vh;
-    color: #4693b8;
+    color: #120e16;
 }
 .edc-col h3{
-    font-size: 1.7vh;
+    font-size: .7rem;
     text-align: center;
 }
 .edc-col p{
@@ -364,7 +388,7 @@ button:hover {
     flex-direction: column;
 }
 .contact-title h1{
-    color: #123175;
+    color: #9f55ff;
 }
 
 .contact-form{
@@ -377,7 +401,7 @@ button:hover {
     padding-top: 4rem 0;
 }
 .contact-form h4{
-    color: #123175;
+    color: #ffffff;
     font-weight: 100;
     text-align: center;
     margin-bottom: 1.5rem;
@@ -388,8 +412,8 @@ button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #4693b8;
-    margin-bottom: .3rem;
+    background: #28242b;
+    margin-bottom: .5rem;
 }
 .form-inp{
     width: 100%;
@@ -400,6 +424,10 @@ button:hover {
     flex-direction: column;
 
 }
+.inp{
+    width:30vw;
+    border : solid 1px #9f55ff;
+}
 .inp input{
     width: 90%;
     height: 100%;
@@ -407,13 +435,15 @@ button:hover {
     border: none;
     outline: none;
     background: none;
+    user-select: text;
 }
 .messg{
-    width: 20rem;
+    width: 30vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #4693b8;
+    background: #28242b;
+    border : solid 1px #9f55ff;
 }
 .messg textarea{
 
@@ -423,6 +453,7 @@ button:hover {
     border: none;
     outline: none;
     background: none;
+    user-select: text;
 }
 .contact-btn{
     width: 20rem;
@@ -434,60 +465,33 @@ button:hover {
 .contact-btn button{
     width: 8rem;
     height: 2rem;
-    background: #123175;
+    background: white;
     opacity: .8;
     border-radius: 50px;
-    color: white;
+    color: #9f55ff ;
     letter-spacing: 1px;
     font-size: .8rem;
     transition: .3s;
 }
 .contact-btn button:hover{
-    background: #e2b327;
-    border-color: #e2b327;
+    background: #9f55ff;
+    color: black;
     transition: .3s;
 }
 
 .CONTACT{
-        width: 90%;
+        width: 100%;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         padding: 1rem 0;
 
 }
 .contact-col{
     display: flex;
     justify-content: center;
-    align-items: left;
+    align-items: center;
     flex-direction: column;
 }
-.or{
-    height: 90%;
-    width: .3%;
-    background-color: white;
-
-}
-
-.contact-info{
-    width: 40%;
-    background:none;
-    height: 30vh;
-    color: #123175;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.email{
-    font-size: 1.5rem;
-    
-}
-.address{
-    font-size: 1.3rem;
-}
-.phone {
-    font-size: 1.1rem;
-}
-
 footer{
     width: 100%;
     height: 15vh;
@@ -495,8 +499,7 @@ footer{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #7f5a83;
-    background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
+    background-color: #120e16;
 
 }
 .footer-icons{
@@ -511,16 +514,16 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid #5298c1;
+    border: 2px solid #ffffff;
     margin-left: 1rem;
     transition: .3s;
-    color:#5298c1;
+    color:#ffffff;
     text-decoration: none;
 }
 
 .icon-f:hover{
-    background: #5298c1;
-    border-color: #5298c1;
+    background: #9f55ff;
+    border-color: #9f55ff;
     color: white;
     transition: .4s;
 }
@@ -530,25 +533,8 @@ footer{
     #about-me{
         height: auto;
     }
-    .icon-d{
-        font-size: 1rem;
-        margin-left: 1rem;
-    }
-      .menu-icon{
-        display: flex;
-    }
-    .intro h1{
-        font-size: 1.5rem;
-    }
-    .intro p{
-        font-size: .8rem;
-    }
     .btns{
         flex-direction: column;
-    }
-    .btns button{
-        margin-bottom: 1rem;
-        margin-left: 0;
     }
     .hire-me , .resume{
         margin-top: 1rem;
@@ -585,19 +571,11 @@ footer{
     .contact-title h1{
         margin-top: 2vh;
     }
-    .contact-col{
-        align-items: center;
-        width: 100%;
-        margin-top: 7vh;
-    }
     .other{
         width: 100%;
     }
     .other div{
         font-size: 1rem;
-    }
-    .or{
-        display: none;
     }
     .other .iconify {
         margin-top: 2vh;
