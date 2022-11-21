@@ -1,0 +1,81 @@
+//Font
+
+@font-face {
+    font-family: 'Montserrat-ExtraBold';
+    src: url('./fonts/Montserrat-ExtraBold.ttf');
+}
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('./fonts/Montserrat-Regular.ttf');
+}
+@font-face {
+    font-family: 'Montserrat-Light';
+    src: url('./fonts/Montserrat-Light.ttf');
+}
+ 
+.App{
+    font-family: 'Montserrat-Regular';
+    transition: all 0.5s ease;
+    .Social{
+        background-color: #7EC8E3;
+        padding: 40px 10px;
+        border-radius: 10px 0 0 10px;
+        //sticky side bar
+        position: fixed;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+        z-index: 100;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .Social-icon{
+            margin-bottom: 1.2rem;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+        .Vertical-line{
+            width: 1px;
+            height: 100px;
+            background-color: #fff;
+            margin: 0 1.2rem;
+        }       
+    }
+}
+.Body{
+    padding: 5% 8%;
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+    .Section{
+        //background-color: white;
+        padding: 2% 4%;
+        margin: 3% 0%;
+        .Section-title{
+            font-size: 1.7rem;
+            @media (max-width: 600px) {
+                font-size: 1.3rem;
+            }
+            font-weight: 900;
+            margin-bottom: 1%;
+            font-family: 'Montserrat-ExtraBold';
+        }
+        .Ligne{
+            height: 1px;
+            background-color: #aeaeb3;
+            width: 100%;
+            margin:3% 0%;
+            @media (max-width: 600px) {
+                margin: 7% 0;
+            }
+        }
+        .Section-content{
+            padding:2% 0;
+        }
+    
+    }
+}
+
