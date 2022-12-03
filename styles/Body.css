@@ -1,0 +1,213 @@
+/*
+    FONTS
+*/
+@font-face {
+    font-family: 'Montserrat-ExtraBold';
+    src: url('../assets/fonts/Montserrat-ExtraBold.ttf') format('truetype');
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/*
+///////////////////////////////////////////////////////////////////////////////////////
+*/
+Body{
+    background-color: #030724;
+    font-family: Montserrat;
+    color: #ffffff;
+}
+.Body{
+    padding: 5% 8%;
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+}
+.Section{
+    padding: 2% 4%;
+    margin: 3% 0%;
+}
+.Section-title{
+    font-size: 1.7rem;
+    margin-bottom: 1%;
+    font-family: 'Montserrat-ExtraBold';
+}
+.Ligne{
+    height: 1px;
+    background-color: #aeaeb3;
+    width: 100%;
+    margin:3% 0%;
+}
+.About{
+    background-color: #01041d;
+}
+.Section-content{
+    padding:2% 0;
+}
+.Education-bloc{
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    width: 100%;
+}
+.Education-dates{
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+}
+.Education-date-item{
+    flex-grow: 1;
+    text-align: end;
+    padding: 5px;
+    font-weight: 700;
+    color: #5fd4e9;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+.Education-content{
+    width: 90%;
+}
+
+.Education-content-item{
+    width: 90%;
+    padding:5% 2%;
+    transition: 0.3s;
+    border-left: solid 1px #5fd4e9;
+}
+.Education-content-item:hover {
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    border-left: solid 5px #5fd4e9;
+    transition: all ease-in-out 300ms;
+}
+.Education-content-item-title{
+    font-size: 1.2rem;
+    margin-bottom: 1%;
+    font-weight: 700;
+    color: #ffffff;
+}
+.Education-content-item-subtitle{
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 1%;
+    font-weight: 700;
+    color: #71b1c9;
+}
+.Education-content-item-date{
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin-bottom: 1%;
+    font-weight: 700;
+    color: #ddfaff;
+}
+
+.Section3-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.Skill{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+    padding: 10px;
+    margin-bottom: 1%;
+}
+.Skill-title{
+    font-size: 1rem;
+    font-weight: bold;
+    margin-right: 1%;
+}
+
+.Projects-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.Projects-content-item{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: 30%;
+    margin: 1.3%;  
+}
+.Projects-content-item:hover .Projects-content-item-img{
+    box-shadow: 0 12px 12px 0 rgba(0, 0, 0, 0.2);
+}
+.Projects-content-item:hover .Projects-content-item-title{
+    color: #71b1c9;
+    cursor: pointer;
+}
+.Projects-content-item:hover .Projects-content-item-desc{
+    color: #dddddd;
+}
+
+.Projects-content-item-img{
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+}
+.Projects-content-item-title{
+    font-size: 1.2rem;
+    margin: 1%;
+    padding: 10px 0;
+    font-weight: 700;
+}
+
+.Projects-content-item-desc{
+    padding: 5px 0;
+}
+
+
+.social-img{
+    width: 30px;
+    height: 30px; 
+}
+
+
+/*
+///////////////////////////////////////////////////////////////////////////////////////
+*/
+@media (max-width: 600px) {
+    .Section-title{
+         font-size: 1.3rem;
+    } 
+    .Ligne{
+        margin: 7% 0;
+    }
+    .Education-content-item{
+     padding: 7%;
+    }
+    .Education-content-item-title{
+     font-size: 1rem;
+     margin-bottom: 5%;
+    }
+    .Education-content-item-subtitle{
+     font-size: .8rem;
+     margin-bottom: 5%;
+    }
+    .Education-content-item-date{
+        font-size: .8rem;
+    }
+}
+@media (max-width: 450px){
+    .Projects-content{
+        justify-content: center;
+    }
+    .Projects-content-item{
+        width: 70%;
+    }
+    .Projects-content-item-img{
+        height: 150px;
+    }
+    .Projects-content-item-title{
+        font-size: .9rem;
+    }
+    .Projects-content-item-desc{
+        font-size: .7rem;
+    }
+}

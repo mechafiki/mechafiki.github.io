@@ -1,0 +1,31 @@
+footer{
+    background-color: #01041d;
+    margin: 0;
+   
+}
+.footer-imgs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+}
+.social-img{
+    width: 30px;
+    height: 30px; 
+    margin-inline: 20px;
+}
+svg path{
+    fill: green;
+}
+.contact-info{
+    padding: 30px 0 0 70px ;
+}
+.contact-info-title{
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+@media (max-width: 500px){
+    .contact-info{
+        padding: 30px;
+    }
+}
