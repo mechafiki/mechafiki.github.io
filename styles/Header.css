@@ -2,55 +2,66 @@
     font-family: 'Montserrat';
     src: url('../assets/fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
 }
+@font-face {
+    font-family: 'Montserrat-ExtraBold';
+    src: url('../assets/fonts/Montserrat-ExtraBold.ttf') format('truetype');
+}
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 .App-header {
-    text-align: center;
-    /* background: linear-gradient(-45deg, #080b25, #0b1149, #71b1c9, #000C66);
-    background-size: 400% 400%;
-    -webkit-animation: Gradient 15s ease infinite;
-    -moz-animation: Gradient 15s ease infinite;
-    animation: Gradient 15s ease infinite;  */
-    height: 70vh;
+    padding: 100px 20% ;
+    text-align: center; 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
+    color: #444;
 }
-.Avatar {
-    height: 25vmin;
-    pointer-events: none;
-    margin-bottom: 30px;
-    border-radius: 50%;
-    border: 5px solid #ffffff;
-}
+
 .title{
-    font-size: 2rem;
+    font-size: 3.3rem;
+    margin: 50px 0;
+    font-family: 'Montserrat-ExtraBold';
+}
+.name{
     margin-bottom: 1%;
     font-weight: 700;
-    max-width: 70%;
+    background: -webkit-linear-gradient(45deg, #2978b5, #0f395a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .subtitle{
-    max-width: 50%;
-    font-weight: lighter;
-    font-size: 1.1rem;
-    color: #d1d1cd;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #444;
+}
+.description{
+    margin-top: 40px;
+    font-size: 1rem;
+    text-align: justify;
+    
 }
 
 @media (max-width: 926px){
-    .App-header{
-        height: 60vh;
+    .title{
+        font-size: 2.5rem;
+        margin: 30px;
+    }
+    .subtitle{
+        max-width: 80%;
+        font-size: 1.2rem;
+    }
+    .description{
+        width: 70%;
+        margin-top: 20px;
+        font-size: 0.9rem;
     }
 }
 @media (max-width: 768px) {
-    .Avatar {
-        height: 20vmin;
-    }
+
     .title{
         font-size: 1.3rem;
         margin: 30px;
