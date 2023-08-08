@@ -1,17 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/Header.css">
-    <link rel="stylesheet" href="styles/Body.css">
-    <link rel="stylesheet" href="styles/Footer.css">
-    <title>Mohamed E. CHAFIKI</title>
-
+	<title>Mohamed El Amine Chafiki - Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="styles/white-preview.css">
+    <link rel="stylesheet" type="text/css" href="styles/dark-preview.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="script.js"></script>
 </head>
-<body>
-    <header class="App-header">
+<body class="white-preview">
+
+	<div class="btn-container">
+			<label class="switch btn-color-mode-switch">
+		        <input type="checkbox" name="color_mode" id="color_mode" value="1">
+		        <label for="color_mode" data-on="Dark" data-off="Light" class="btn-color-mode-switch-inner"></label>
+		    </label>
+	</div>
+
+    <section class="header">
         <div class='title'>
           Hi, I'm <span class="name">Mohamed El Amine CHAFIKI</span>
         </div>
@@ -34,7 +41,7 @@
           My goal is to continue developing my skills so that I can become a 
           well-rounded data scientist who can provide insights that drive business decisions.
         </div>
-    </header>
+    </section>
     <section class="Body">
         <div class='Section Education'>
             <div class='Section-title'>
@@ -44,7 +51,7 @@
             <div class="Education-bloc">
               <div class="Section-content Education-dates" >
                 <div class='Education-date-item'>
-                  Now
+                  2023
                 </div>
                 <div class='Education-date-item'>
                   2021
@@ -98,19 +105,36 @@
               Skills
             </div>
             <div class='Section3-content'>
-              <div class='Skill'>Python</div> 
-              <div class='Skill'>Java</div>
-              <div class='Skill'>RStudio</div>
-              <div class='Skill'>MySQL</div>
-              <div class='Skill'>JavaScript</div>
-              <div class='Skill'>PowerBI</div>
-              <div class='Skill'>React.Js</div>
-              <div class='Skill'>Machine Learning</div>
-              <div class='Skill'>Hadoop</div>
-              <div class='Skill'>PowerBI</div>
-              <div class='Skill'>Firebase</div>
-              <div class='Skill'>Node.js</div>
-              <div class='Skill'>Git</div>
+                <div class='Skill'>Unix</div>
+                <div class='Skill'>Git</div>
+                <div class='Skill'>C/C++</div>
+                <div class='Skill'>Java</div>
+                <div class='Skill'>Python</div>
+                <div class='Skill'>pandas</div>
+                <div class='Skill'>numpy</div>
+                <div class='Skill'>scikit-learn</div>
+                <div class='Skill'>keras</div>
+                <div class='Skill'>open CV2</div>
+                <div class='Skill'>torch</div>
+                <div class='Skill'>NLP</div>
+                <div class='Skill'>EDA</div>
+                <div class='Skill'>Data Mining</div>
+                <div class='Skill'>R</div>
+                <div class='Skill'>RStudio</div>
+                <div class='Skill'>PowerBI</div>
+                <div class='Skill'>DAX</div>
+                <div class='Skill'>HTML5</div>
+                <div class='Skill'>CSS</div>
+                <div class='Skill'>Javascript</div>
+                <div class='Skill'>React.js</div>
+                <div class='Skill'>Firebase</div>
+                <div class='Skill'>Node.js</div>
+                <div class='Skill'>Php</div>
+                <div class='Skill'>MySQL</div>
+                <div class='Skill'>HADOOP</div>
+                <div class='Skill'>Spark</div>
+                <div class='Skill'>Docker</div>
+                <div class='Skill'>Vmware Worksatation</div>  
             </div> 
         </div> 
         <div class="Section Projects">
@@ -119,14 +143,23 @@
             </div>
               <div class='Projects-content'>
                 <div class='Projects-content-item'>
-                  <img class="Projects-content-item-img" src="./assets/proj-imgs/house.png">
-                  <div class='Projects-content-item-title'>
-                      House Pricing Predictions
-                  </div>
-                  <div class='Projects-content-item-desc'>
-                    Advanced regression for house pricing using ANOVA, PCA and Linear Regression
-                  </div>
-              </div>
+                    <img class="Projects-content-item-img" src="./assets/proj-imgs/recommender.png">
+                    <div class='Projects-content-item-title'>
+                        Implementation of Large scale Recommender systems
+                    </div>
+                    <div class='Projects-content-item-desc'>
+                        Set up a Hadoop/Spark cluster within 3 Docker containers, executed diverse movie recommendation algorithms, and successfully submitted Spark jobs for analysis.
+                    </div>
+                </div>
+                <div class='Projects-content-item'>
+                    <img class="Projects-content-item-img" src="./assets/proj-imgs/t5.png">
+                    <div class='Projects-content-item-title'>
+                        Automatic Text Summarization using Transformers
+                    </div>
+                    <div class='Projects-content-item-desc'>
+                        Leveraged the BBC News Summary Dataset to train a Google T5 transformer model, optimizing parameters and fine-tuning to enhance accuracy, with the model saved for future training iterations.
+                    </div>
+                </div>
                 <div class='Projects-content-item'>
                     <img class="Projects-content-item-img" src="./assets/proj-imgs/2048.png">
                     <div class='Projects-content-item-title'>
@@ -134,6 +167,24 @@
                     </div>
                     <div class='Projects-content-item-desc'>
                         A simple AI built to beat the 2048 game using JavaScript
+                    </div>
+                </div>
+                <div class='Projects-content-item'>
+                    <img class="Projects-content-item-img" src="./assets/proj-imgs/arvision.png">
+                    <div class='Projects-content-item-title'>
+                        ARVision for education
+                    </div>
+                    <div class='Projects-content-item-desc'>
+                        Design of user platform for an application that utilizes markers to trigger the appearance of 3D objects through machine learning, facilitating interactive learning experiences.
+                    </div>
+                </div>
+                <div class='Projects-content-item'>
+                    <img class="Projects-content-item-img" src="./assets/proj-imgs/house.png">
+                    <div class='Projects-content-item-title'>
+                        House Pricing Predictions
+                    </div>
+                    <div class='Projects-content-item-desc'>
+                      Advanced regression for house pricing using ANOVA, PCA and Linear Regression
                     </div>
                 </div>
                 <div class='Projects-content-item'>
@@ -171,9 +222,11 @@
         
       </div>
       <div class="footer-imgs">
-        <a href="https://www.github.com/mechafiki" target="_blank"><img class="social-img" src="./assets/svg/github.svg"></a>
-        <a href="https://www.linkedin.com/in/mohamed-el-amine-chafiki/" target="_blank"><img class="social-img" src="./assets/svg/linkedin.svg"></a>
-      </div>
+        <a href="https://www.github.com/mechafiki" target="_blank"><i class="footer-icon fa fa-github" style="font-size: 36px;"></i></a>
+        <a href="https://www.linkedin.com/in/mohamed-el-amine-chafiki/" target="_blank"><i class="footer-icon fa fa-linkedin-square" style="font-size: 36px;"></i></a>
+    </div>
     </footer>    
+
+
 </body>
 </html>

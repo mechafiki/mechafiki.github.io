@@ -1,0 +1,53 @@
+.dark-preview{
+    background:  #030118;
+}
+
+.dark-preview .title, .dark-preview .Section-title{
+    color: #FFF;
+}
+
+.dark-preview .subtitle, .dark-preview .description, .dark-preview .Education-content-item-title{ 
+    color: #cbd6f5;
+}
+
+.dark-preview .name{
+    margin-bottom: 1%;
+    font-weight: 700;
+    background: -webkit-linear-gradient(45deg, #68ace0, #3f98db);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.dark-preview .Education-date-item{
+    color: #3498DB;
+}
+
+.dark-preview .Education-content-item{
+    border-left: solid 1px #3498DB;
+}
+.dark-preview .Education-content-item:hover {
+    box-shadow: 0 8px 8px 0 rgba(104, 172, 224, 0.2);
+    cursor: pointer;
+    border-left: solid 5px #3498DB;
+    transition: all ease-in-out 300ms;
+}
+.dark-preview .Skill{
+    background-color: #3498DB ;
+    color: #FFF;
+    box-shadow: 0 3px 3px 0 rgba(52, 152, 219, 0.2);
+}
+
+.dark-preview .Projects-content-item-title, .dark-preview .Projects-content-item-desc{
+    color: #bdbdbd;    
+}
+.dark-preview .Projects-content-item:hover .Projects-content-item-title{
+    color: #ffffff;
+    cursor: pointer;
+}
+.dark-preview .Projects-content-item:hover .Projects-content-item-desc{
+    color: #cbd6f5;
+}
+
+.dark-preview footer{
+    background-color: #000;   
+}
