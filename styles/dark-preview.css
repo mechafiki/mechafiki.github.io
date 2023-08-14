@@ -32,9 +32,9 @@
     transition: all ease-in-out 300ms;
 }
 .dark-preview .Skill{
-    background-color: #3498DB ;
+    background-color: #1a9735 ;
     color: #FFF;
-    box-shadow: 0 3px 3px 0 rgba(52, 152, 219, 0.2);
+    box-shadow: 0 3px 3px 0 rgba(70, 172, 95, 0.3);
 }
 
 .dark-preview .Projects-content-item-title, .dark-preview .Projects-content-item-desc{

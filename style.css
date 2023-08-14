@@ -87,12 +87,6 @@ label {
     padding: 5px 0px;
 }
 
-.btn-color-mode-switch > .alert{
-    display: none;
-    background: #FF9800;
-    border: none;
-    color: #fff;
-}
 
 .btn-color-mode-switch input[type="checkbox"]{
     cursor: pointer;
