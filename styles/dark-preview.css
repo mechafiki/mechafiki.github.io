@@ -1,51 +1,47 @@
 .dark-preview{
-    background:  #030118;
+    background:  #1a1625;
 }
 
 .dark-preview .title, .dark-preview .Section-title{
     color: #FFF;
 }
-
-.dark-preview .subtitle, .dark-preview .description, .dark-preview .Education-content-item-title{ 
-    color: #cbd6f5;
+.dark-preview .subtitle{
+    color: #fff;
+}
+.dark-preview .description, .dark-preview .Education-content-item-title{ 
+    color: #fff;
 }
 
 .dark-preview .name{
     margin-bottom: 1%;
     font-weight: 700;
-    background: -webkit-linear-gradient(45deg, #68ace0, #3f98db);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #fcb140;
 }
 
 .dark-preview .Education-date-item{
-    color: #3498DB;
+    color: #bdbdbd;
 }
 
 .dark-preview .Education-content-item{
-    border-left: solid 1px #3498DB;
+    border-left: solid 1px #bdbdbd;
 }
 .dark-preview .Education-content-item:hover {
-    box-shadow: 0 8px 8px 0 rgba(104, 172, 224, 0.2);
+    background-color: #181420;
     cursor: pointer;
-    border-left: solid 5px #3498DB;
+    border-left: solid 5px #bdbdbd;
     transition: all ease-in-out 300ms;
 }
 .dark-preview .Skill{
-    background-color: #1a9735 ;
-    color: #FFF;
-    box-shadow: 0 3px 3px 0 rgba(70, 172, 95, 0.3);
+    background-color: #fcb140 ;
+    color: #000;
+    box-shadow: 0 3px 3px 0 rgba(85, 97, 19, 0.3);
 }
 
 .dark-preview .Projects-content-item-title, .dark-preview .Projects-content-item-desc{
-    color: #bdbdbd;    
+    color: #fff;    
 }
-.dark-preview .Projects-content-item:hover .Projects-content-item-title{
-    color: #ffffff;
-    cursor: pointer;
-}
-.dark-preview .Projects-content-item:hover .Projects-content-item-desc{
-    color: #cbd6f5;
+.dark-preview .Projects-content-item-img{
+    box-shadow: 0 12px 12px 0 rgba(100, 102, 105, 0.2);
 }
 
 .dark-preview footer{

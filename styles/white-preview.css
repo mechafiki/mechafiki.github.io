@@ -9,8 +9,14 @@
 *{
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
+    padding: 0;  
 }
+
+Body{
+    background-color: #fff;
+    color: #444;
+}
+
 .header {
     padding: 100px 20% ;
     text-align: center; 
@@ -18,7 +24,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: #444;
+    color: #000;
 }
 
 .title, .name{
@@ -29,14 +35,12 @@
 .name{
     margin-bottom: 1%;
     font-weight: 700;
-    background: -webkit-linear-gradient(45deg, #2978b5, #0f395a);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #fcb140;
 }
 .subtitle{
     font-weight: 700;
     font-size: 1.5rem;
-    color: #444;
+    color: #000000;
 }
 .description{
     margin-top: 40px;
@@ -67,26 +71,7 @@
         margin: 30px;
     }
 }
-@-webkit-keyframes Gradient {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@-moz-keyframes Gradient {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@keyframes Gradient {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
 
-Body{
-    background-color: #fcfcfc;
-    color: #444;
-}
 .Body{
     padding: 0 8%;
     margin: 0%;
@@ -99,10 +84,10 @@ Body{
 }
 .Section-title{
     font-size: 2.2rem;
-    margin-bottom: 1%;
+    margin-bottom: 4%;
     text-align: center;
     font-family: 'Montserrat-ExtraBold';
-    color: #444;
+    color: #000;
 }
 
 .Section-content{
@@ -124,7 +109,7 @@ Body{
     text-align: end;
     padding: 5px;
     font-weight: 700;
-    color: #2978b5;
+    color: #444;
     font-size: 0.9rem;
     font-weight: 700;
 }
@@ -136,25 +121,26 @@ Body{
     width: 90%;
     padding:5% 2%;
     transition: 0.3s;
-    border-left: solid 1px #2978b5;
+    border-left: solid 1px #444;
 }
 .Education-content-item:hover {
-    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: #fff7eb;
     cursor: pointer;
-    border-left: solid 5px #2978b5;
+    border-left: solid 5px #444;
     transition: all ease-in-out 300ms;
 }
 .Education-content-item-title{
     font-size: 1.2rem;
     margin-bottom: 1%;
     font-weight: 700;
+    color: #000;
 }
 .Education-content-item-subtitle{
     font-size: 1rem;
     font-weight: 700;
     margin-bottom: 1%;
     font-weight: 700;
-    color: #2978b5;
+    color: #717175;
 }
 
 
@@ -171,16 +157,12 @@ Body{
     padding: 10px;
     background-color: #fcb140;
     margin: 1%;
-    /* box shadow */
-    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2);
 }
 .Skill:hover{
     transform: translateY(-4px);
     transition: all ease-in-out 300ms;
     cursor: pointer;
 }
-
-
 
 .Projects-content{
     display: flex;
@@ -195,16 +177,6 @@ Body{
     width: 30%;
     margin: 1.3%;  
 }
-.Projects-content-item:hover .Projects-content-item-img{
-    box-shadow: 0 12px 12px 0 rgba(0, 0, 0, 0.2);
-}
-.Projects-content-item:hover .Projects-content-item-title{
-    color: #2978b5;
-    cursor: pointer;
-}
-.Projects-content-item:hover .Projects-content-item-desc{
-    color: #0f395a;
-}
 
 .Projects-content-item-img{
     width: 100%;
@@ -215,11 +187,14 @@ Body{
     font-size: 1.2rem;
     margin: 1%;
     padding: 10px 0;
-    font-weight: 700;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    color: #000;
 }
 
 .Projects-content-item-desc{
     padding: 5px 0;
+    color: #000;
 }
 
 
@@ -236,9 +211,6 @@ Body{
     .Section-title{
          font-size: 1.3rem;
     } 
-    .Ligne{
-        margin: 7% 0;
-    }
     .Education-content-item{
      padding: 7%;
     }
